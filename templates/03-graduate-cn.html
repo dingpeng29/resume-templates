@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>简历 - 应届生模板</title>
+<style>
+@page{size:A4;margin:15mm;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Microsoft YaHei','PingFang SC',sans-serif;font-size:13px;line-height:1.6;color:#1e293b;max-width:210mm;margin:0 auto;padding:15mm;}
+h1{font-size:26px;font-weight:800;text-align:center;}
+h2{font-size:14px;font-weight:700;color:#2563eb;border-bottom:2px solid #bfdbfe;padding-bottom:4px;margin:16px 0 8px;}
+h3{font-size:13px;font-weight:700;}
+.header{text-align:center;margin-bottom:16px;}
+.header .info{font-size:12px;color:#64748b;margin-top:4px;}
+.header .info span{margin:0 8px;}
+.row{display:flex;gap:20px;}
+.col{flex:1;}
+.item{margin-bottom:10px;}
+.item .head{display:flex;justify-content:space-between;align-items:baseline;}
+.item .head .date{font-size:11px;color:#64748b;white-space:nowrap;}
+.item .desc{font-size:12px;color:#475569;margin-top:2px;}
+.skills{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;}
+.skill-tag{background:#dbeafe;color:#1e40af;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;}
+.achievement{background:#f0fdf4;border-left:3px solid #10b981;padding:8px 12px;margin:4px 0;font-size:12px;border-radius:0 4px 4px 0;}
+.course-tags{display:flex;flex-wrap:wrap;gap:4px;}
+.course-tag{background:#f1f5f9;color:#475569;padding:2px 8px;border-radius:4px;font-size:10px;}
+@media print{body{padding:0;}}
+</style>
+</head>
+<body>
+<!-- ====== 编辑以下内容 ====== -->
+<div class="header">
+<h1>李 明</h1>
+<div class="info">
+<span>📧 li.ming@email.com</span><span>📱 139-0000-0000</span><span>🔗 github.com/liming</span><span>📍 北京</span>
+</div>
+</div>
+
+<div class="row">
+<div class="col">
+<h2>教育背景</h2>
+<div class="item">
+<div class="head"><h3>清华大学 · 计算机科学与技术 本科</h3><span class="date">2022.09 - 2026.06</span></div>
+<div class="desc">GPA 3.9/4.0 · 排名前5% · 国家奖学金(2024,2025) · ACM校队成员</div>
+<div class="skills" style="margin-top:6px;">
+<span class="course-tag">数据结构</span><span class="course-tag">算法设计</span><span class="course-tag">操作系统</span><span class="course-tag">计算机网络</span><span class="course-tag">数据库</span><span class="course-tag">编译原理</span>
+</div>
+</div>
+
+<h2>实习经历</h2>
+<div class="item">
+<div class="head"><h3>腾讯 · 后端开发实习生</h3><span class="date">2025.06 - 2025.09</span></div>
+<div class="desc">微信支付·商户平台组</div>
+<ul style="padding-left:16px;font-size:12px;color:#475569;margin-top:4px;">
+<li>参与商户结算系统重构，使用Go+Redis优化对账流程，处理速度提升3倍</li>
+<li>独立完成异常交易自动告警模块，日均处理100万+交易记录</li>
+<li>编写单元测试覆盖率从60%提升至92%</li>
+</ul>
+</div>
+
+<div class="item">
+<div class="head"><h3>美团 · 软件开发实习生</h3><span class="date">2024.07 - 2024.09</span></div>
+<div class="desc">外卖事业部·商家端</div>
+<ul style="padding-left:16px;font-size:12px;color:#475569;margin-top:4px;">
+<li>开发商家数据分析看板，使用React+ECharts实现可视化图表</li>
+<li>优化SQL查询性能，核心接口响应时间从800ms降至120ms</li>
+</ul>
+</div>
+</div>
+
+<div class="col">
+<h2>项目经验</h2>
+<div class="item">
+<div class="head"><h3>分布式缓存系统 MiniCache <a href="https://github.com/liming/minicache">→</a></h3></div>
+<div class="desc">Go语言实现的分布式缓存，支持LRU/LFU淘汰策略、HTTP通信、一致性哈希</div>
+<div class="achievement">GitHub 300+ Stars · Go语言中文网推荐项目</div>
+</div>
+
+<div class="item">
+<div class="head"><h3>AI代码审查助手 CodeReviewBot</h3></div>
+<div class="desc">基于GPT API的自动化代码审查工具，支持GitHub PR集成，自动生成审查意见</div>
+<div class="achievement">清华大学Hackathon二等奖 · 10+团队在使用</div>
+</div>
+
+<h2>技能</h2>
+<div class="skills">
+<span class="skill-tag">Go</span><span class="skill-tag">Python</span><span class="skill-tag">Java</span><span class="skill-tag">C++</span>
+<span class="skill-tag">React</span><span class="skill-tag">TypeScript</span><span class="skill-tag">MySQL</span><span class="skill-tag">Redis</span>
+<span class="skill-tag">Docker</span><span class="skill-tag">Linux</span><span class="skill-tag">Git</span>
+</div>
+
+<h2>竞赛/荣誉</h2>
+<div class="item">🏆 ACM-ICPC亚洲区域赛银牌 (2024)</div>
+<div class="item">🏆 全国大学生数学建模竞赛一等奖 (2024)</div>
+<div class="item">📝 发明专利：一种分布式缓存一致性方法 (受理中)</div>
+</div>
+</div>
+<!-- ====== 编辑结束 ====== -->
+</body>
+</html>
