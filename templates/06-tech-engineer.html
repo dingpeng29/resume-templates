@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>简历 - 技术工程师模板</title>
+<style>
+@page{size:A4;margin:12mm;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Microsoft YaHei','PingFang SC',sans-serif;font-size:12px;line-height:1.55;color:#0f172a;max-width:210mm;margin:0 auto;padding:12mm;}
+h1{font-size:24px;font-weight:800;color:#0f172a;}
+h2{font-size:12px;font-weight:700;color:#2563eb;border-bottom:1.5px solid #2563eb;padding-bottom:3px;margin:12px 0 6px;text-transform:uppercase;letter-spacing:0.5px;}
+h3{font-size:12px;font-weight:700;}
+a{color:#2563eb;}
+.header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;}
+.header .info .title{font-size:13px;color:#64748b;}
+.header .contact{text-align:right;font-size:11px;color:#475569;line-height:1.8;}
+.section{margin-bottom:4px;}
+.exp-item{margin-bottom:8px;border-left:3px solid #e2e8f0;padding-left:12px;}
+.exp-item .role{font-weight:700;font-size:12px;}
+.exp-item .meta{font-size:11px;color:#64748b;margin-bottom:2px;}
+.exp-item .meta span{margin-right:12px;}
+.bullets{font-size:11px;color:#334155;}
+.bullets li{margin-bottom:2px;list-style:disc inside;}
+.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px 16px;font-size:11px;}
+.skills-grid .cat{font-weight:600;color:#2563eb;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.project-item{margin-bottom:6px;}
+.project-item .name{font-weight:600;font-size:11px;}
+.project-item .desc{font-size:11px;color:#475569;}
+@media print{body{padding:0;}}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="info">
+<h1>张三</h1>
+<div class="title">高级后端工程师 · 6年经验 · 专注于高并发分布式系统</div>
+</div>
+<div class="contact">
+📧 zhang.san@email.com<br>📱 138-0000-0000<br>🔗 github.com/zhangsan<br>📍 北京·海淀
+</div>
+</div>
+
+<div class="section">
+<h2>技术能力</h2>
+<div class="skills-grid">
+<span class="cat">后端：</span><span>Go (3年) · Java/Spring Boot (6年) · Python · Node.js</span>
+<span class="cat">数据库：</span><span>MySQL · PostgreSQL · Redis · MongoDB · Elasticsearch</span>
+<span class="cat">基础设施：</span><span>Docker · K8s · AWS · Terraform · CI/CD (GitHub Actions)</span>
+<span class="cat">架构：</span><span>微服务 · 事件驱动 · gRPC · RabbitMQ · Kafka</span>
+<span class="cat">前端：</span><span>React · TypeScript (可独立开发前端页面)</span>
+<span class="cat">其他：</span><span>Git · Linux · Prometheus · Grafana · 技术文档写作</span>
+</div>
+</div>
+
+<div class="section">
+<h2>工作经历</h2>
+<div class="exp-item">
+<div class="role">字节跳动 · 高级后端工程师</div>
+<div class="meta"><span>2023.03 - 至今</span><span>抖音电商 · 交易中台</span></div>
+<ul class="bullets">
+<li>设计并实现订单状态机重构，支撑日均千万级订单流转，系统可用性从99.9%提升到99.99%</li>
+<li>主导数据库分库分表方案，将核心查询P99延迟从800ms降低到120ms</li>
+<li>搭建实时数据同步管道(Kafka→Flink→ClickHouse)，实现秒级交易数据看板</li>
+<li>编写技术方案文档20+篇，指导3名初级工程师成长</li>
+</ul>
+</div>
+<div class="exp-item">
+<div class="role">阿里巴巴 · 后端开发工程师</div>
+<div class="meta"><span>2020.07 - 2023.02</span><span>淘宝 · 商品中台</span></div>
+<ul class="bullets">
+<li>参与商品详情页服务化改造，接口RT从200ms优化到60ms，支撑大促峰值QPS 50万+</li>
+<li>设计商品属性扩展系统，支持动态Schema，赋能100+业务线无需发版即可扩展商品字段</li>
+<li>获得年度技术突破奖（2021 Q4）</li>
+</ul>
+</div>
+</div>
+
+<div class="two-col">
+<div class="section">
+<h2>教育背景</h2>
+<div class="exp-item" style="border:none;padding-left:0;">
+<div class="role">北京大学</div>
+<div class="meta">计算机科学与技术 · 硕士 · 2017-2020</div>
+</div>
+</div>
+<div class="section">
+<h2>开源项目</h2>
+<div class="project-item">
+<div class="name">go-micro-framework · 3.2k ⭐ GitHub</div>
+<div class="desc">轻量级Go微服务脚手架，集成服务发现/配置中心/链路追踪</div>
+</div>
+<div class="project-item">
+<div class="name">k8s-deploy-toolkit · 800+ ⭐</div>
+<div class="desc">Kubernetes部署运维工具集，简化GitOps工作流</div>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>证书 &amp; 语言</h2>
+<div style="font-size:11px;">
+AWS Solutions Architect Professional · Kubernetes CKA · CET-6 (580) · 英语技术文档读写无障碍
+</div>
+</div>
+</body>
+</html>
